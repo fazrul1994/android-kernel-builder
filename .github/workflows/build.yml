@@ -13,7 +13,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Build kernel 
         env:
-           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-           TELEGRAM_CHATID: ${{ secrets.TELEGRAM_CHATID }}
+           TOKEN: ${{ secrets.TOKEN }}
+           CHAT_ID: ${{ secrets.CHAT_ID }}
         run: bash build.sh
         
